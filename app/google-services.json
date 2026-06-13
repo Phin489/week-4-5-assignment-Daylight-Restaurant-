@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "695041902214",
+    "project_id": "daylight-restaurant",
+    "storage_bucket": "daylight-restaurant.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695041902214:android:23a4682a7f602c7364b307",
+        "android_client_info": {
+          "package_name": "com.aistudio.daylight.xkqwlp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCc2XQDt5VykVEmmBcX7AZ7sPhAMt6nWjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

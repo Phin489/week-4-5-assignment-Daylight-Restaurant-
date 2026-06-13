@@ -1,0 +1,6 @@
+{
+  "name": "Daylight",
+  "description": "Premium Steakhouse & Grill app with reservation and admin capabilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
