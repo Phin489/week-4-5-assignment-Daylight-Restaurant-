@@ -47,7 +47,7 @@ class MainViewModel(private val repo: AppRepository) : ViewModel() {
         }
     }
     
-    private fun observeUserReservations(userId: Int) {
+    private fun observeUserReservations(userId: String) {
         viewModelScope.launch {
             repo.getUserReservations(userId).collect { res ->
                 _uiState.value = _uiState.value.copy(reservations = res)
@@ -70,7 +70,7 @@ class MainViewModel(private val repo: AppRepository) : ViewModel() {
         }
     }
     
-    fun updateReservation(id: Int, status: String) {
+    fun updateReservation(id: String, status: String) {
         viewModelScope.launch {
             repo.updateReservationStatus(id, status)
         }
@@ -82,7 +82,7 @@ class MainViewModel(private val repo: AppRepository) : ViewModel() {
         }
     }
     
-    fun updateMenuItem(id: Int, name: String, price: Double, category: String, desc: String, imageUrl: String = "") {
+    fun updateMenuItem(id: String, name: String, price: Double, category: String, desc: String, imageUrl: String = "") {
         viewModelScope.launch {
             repo.updateMenu(MenuItem(id = id, name = name, price = price, category = category, description = desc, imageUrl = imageUrl))
         }

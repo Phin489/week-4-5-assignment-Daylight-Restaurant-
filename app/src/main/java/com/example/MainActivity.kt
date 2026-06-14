@@ -15,7 +15,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.data.AppRepository
-import com.example.data.local.AppDatabase
 import com.example.ui.screens.*
 import com.example.ui.theme.MyApplicationTheme
 
@@ -23,8 +22,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        val dao = AppDatabase.getDatabase(applicationContext).appDao()
-        val repo = AppRepository(dao)
+        val repo = AppRepository()
         
         setContent {
             MyApplicationTheme {
